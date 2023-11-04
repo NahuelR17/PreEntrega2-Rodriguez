@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Noto+Sans+Kawi&family=Noto+Sans+TC&display=swap');
+
+/*
+font-family: 'IBM Plex Mono', monospace;
+font-family: 'Noto Sans Kawi', sans-serif;
+font-family: 'Noto Sans TC', sans-serif;
+*/
+
+header{
+    height: 110px;
+    background-color: #330C2F;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-family: 'IBM Plex Mono', monospace;
+}
+.logo img{
+    padding-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+h1{
+    text-transform: capitalize;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #B7C0EE;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-op{
+    text-decoration: none;
+    color: #B7C0EE;
+    text-transform: capitalize;
+    font-size: 10px;
+    padding: 5px;
+}
+.nav-op:hover{
+    color: #7067CF;
+}
+.navbar-toggler{
+    background-color: black;
+}
+.nav-item{
+    background-color: black;
+    border: solid 1px #7067CF;
+    border-radius: 20%;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    height: 110px;
+    background-color: #330C2F;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #B7C0EE;
+    font-size: 20px;
+}
+@media only screen  and (min-width: 1024px) and (max-width:1920px) {
+    h1{
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-size: 30px;
+    }
+    .nav-op{
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 15px;
+    }
+    .nav-item{
+        background-color: black;
+        border: solid 1px #7067CF;
+        border-radius: 20%;
+        text-align: center;
+        margin: 2px;
+    }
+}
