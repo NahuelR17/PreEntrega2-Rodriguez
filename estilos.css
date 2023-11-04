@@ -14,7 +14,7 @@ font-family: 'Noto Sans TC', sans-serif;
 
 header{
     height: 110px;
-    background-color: #330C2F;
+    background-color: #AD343E;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -30,43 +30,57 @@ h1{
     padding-left: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: #B7C0EE;
+    color: #E0E0CE;
     font-size: 20px;
     text-align: center;
 }
 .nav-op{
     text-decoration: none;
-    color: #B7C0EE;
+    color: #E0E0CE;
     text-transform: capitalize;
     font-size: 10px;
     padding: 5px;
 }
 .nav-op:hover{
-    color: #7067CF;
+    color: #F2AF29;
 }
 .navbar-toggler{
     background-color: black;
+    font-size: 10px;
 }
 .nav-item{
     background-color: black;
-    border: solid 1px #7067CF;
+    border: solid 1px #E0E0CE;
     border-radius: 20%;
     text-align: center;
 }
-footer{
+.intro{
+    padding-top: 5px;
     text-align: center;
-    height: 110px;
-    background-color: #330C2F;
     font-family: 'IBM Plex Mono', monospace;
-    color: #B7C0EE;
-    font-size: 20px;
+}
+footer{
+    padding: 15px;
+    text-align: center;
+    height: 90px;
+    background-color: #AD343E;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #E0E0CE;
+    font-size: 10px;
+}
+main{
+    background-color: #F2AF29;
+}
+video{
+    border-radius: 5%;
+    width: 100%;
 }
 @media only screen  and (min-width: 1024px) and (max-width:1920px) {
     h1{
         padding-left: 30px;
         padding-top: 30px;
         padding-bottom: 20px;
-        font-size: 30px;
+        font-size: 50px;
     }
     .nav-op{
         text-decoration: none;
@@ -74,10 +88,21 @@ footer{
         font-size: 15px;
     }
     .nav-item{
-        background-color: black;
-        border: solid 1px #7067CF;
         border-radius: 20%;
         text-align: center;
         margin: 2px;
+    }
+    footer{
+        padding-top: 30px;
+        text-align: center;
+        height: 90px;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 20px;
+    }
+    .intro{
+        padding-top: 10px;
+    }
+    .intro p{
+        font-size: 20px;
     }
 }
