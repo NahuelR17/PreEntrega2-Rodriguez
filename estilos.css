@@ -68,18 +68,107 @@ footer{
     color: #E0E0CE;
     font-size: 10px;
 }
-main{
+body{
     background-color: #F2AF29;
 }
 video{
     border-radius: 5%;
     width: 100%;
 }
-@media only screen  and (min-width: 1024px) and (max-width:1920px) {
+.sobre{
+    text-align: center;
+}
+.sobre h2{
+   {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
+   } 
+}
+.sobre p{
+    font-family: 'IBM Plex Mono', monospace;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+}
+.pregu{
+    font-family: 'IBM Plex Mono', monospace;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+.pregu h2{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
+}
+.pregu ol{
+    padding-left: 80px;
+}
+.pregu a{
+    color: black;
+}
+.pregu a:hover{
+    font-weight: 600;
+}
+.pregu p, li{
+    font-size: 15px;
+}
+.pregu p{
+    font-family: 'IBM Plex Mono', monospace;
+    padding-left: 30px;
+}
+@media only screen  and (min-width: 1024px) and (max-width: 1200px){
     h1{
         padding-left: 30px;
+        padding-top: 35px;
+        padding-bottom: 30px;
+        font-size: 30px;
+    }
+    .nav-op{
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 15px;
+    }
+    .nav-item{
+        border-radius: 20%;
+        text-align: center;
+        margin: 2px;
+    }
+    .intro{
+        padding-top: 10px;
+    }
+    .intro p{
+        font-size: 20px;
+    }
+    .pregu h2{
+        font-size: 50px;
+    }
+    .pregu p, li{
+        font-size: 30px;
+    }
+    .sobre h2{
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 50px;
+    } 
+    
+    .sobre p{
+        font-family: 'IBM Plex Mono', monospace;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 30px;
+    }
+    footer{
         padding-top: 30px;
-        padding-bottom: 20px;
+        text-align: center;
+        height: 90px;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 20px;
+    }
+}
+
+@media only screen  and (min-width: 1200px){
+    h1{
+        padding-left: 30px;
+        padding-top: 25px;
+        padding-bottom: 30px;
         font-size: 50px;
     }
     .nav-op{
@@ -92,17 +181,33 @@ video{
         text-align: center;
         margin: 2px;
     }
-    footer{
-        padding-top: 30px;
-        text-align: center;
-        height: 90px;
+    .pregu h2{
+        font-size: 50px;
+    }
+    .pregu p, li{
+        font-size: 30px;
+    }
+    .sobre h2{
         font-family: 'IBM Plex Mono', monospace;
-        font-size: 20px;
+        font-size: 50px;
+    } 
+    .sobre p{
+        font-family: 'IBM Plex Mono', monospace;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 30px;
     }
     .intro{
         padding-top: 10px;
     }
     .intro p{
+        font-size: 20px;
+    }
+    footer{
+        padding-top: 30px;
+        text-align: center;
+        height: 90px;
+        font-family: 'IBM Plex Mono', monospace;
         font-size: 20px;
     }
 }
