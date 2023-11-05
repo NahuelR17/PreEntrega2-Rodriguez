@@ -12,6 +12,7 @@ font-family: 'Noto Sans Kawi', sans-serif;
 font-family: 'Noto Sans TC', sans-serif;
 */
 
+/* Header - Footer - Body */
 header{
     height: 110px;
     background-color: #AD343E;
@@ -54,10 +55,8 @@ h1{
     border-radius: 20%;
     text-align: center;
 }
-.intro{
-    padding-top: 5px;
-    text-align: center;
-    font-family: 'IBM Plex Mono', monospace;
+body{
+    background-color: #F2AF29;
 }
 footer{
     padding: 15px;
@@ -68,21 +67,41 @@ footer{
     color: #E0E0CE;
     font-size: 10px;
 }
-body{
-    background-color: #F2AF29;
+/* Header - Footer - Body */
+
+/* Pagina principal inicio */
+.intro{
+    padding-top: 5px;
+    text-align: center;
+    font-family: 'IBM Plex Mono', monospace;
 }
 video{
     border-radius: 5%;
     width: 100%;
 }
+/* Pagina principal final */
+
+/* Reseñas inicio */
+.opinion{
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+}
+.opinion h3{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#enviar{
+    margin-bottom: 10px;
+}
+/* Reseñas final */
+
+/* Sobre Tortuga inicio */
 .sobre{
     text-align: center;
 }
 .sobre h2{
-   {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 20px;
-   } 
 }
 .sobre p{
     font-family: 'IBM Plex Mono', monospace;
@@ -90,6 +109,9 @@ video{
     padding-right: 10px;
     font-size: 15px;
 }
+/* Sobre Tortuga final */
+
+/* FAQ inicio */
 .pregu{
     font-family: 'IBM Plex Mono', monospace;
     padding-top: 5px;
@@ -115,7 +137,10 @@ video{
     font-family: 'IBM Plex Mono', monospace;
     padding-left: 30px;
 }
+/* FAQ final */
+
 @media only screen  and (min-width: 1024px) and (max-width: 1200px){
+    /* Header - Footer - Body */
     h1{
         padding-left: 30px;
         padding-top: 35px;
@@ -132,29 +157,6 @@ video{
         text-align: center;
         margin: 2px;
     }
-    .intro{
-        padding-top: 10px;
-    }
-    .intro p{
-        font-size: 20px;
-    }
-    .pregu h2{
-        font-size: 50px;
-    }
-    .pregu p, li{
-        font-size: 30px;
-    }
-    .sobre h2{
-        font-family: 'IBM Plex Mono', monospace;
-        font-size: 50px;
-    } 
-    
-    .sobre p{
-        font-family: 'IBM Plex Mono', monospace;
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 30px;
-    }
     footer{
         padding-top: 30px;
         text-align: center;
@@ -162,9 +164,56 @@ video{
         font-family: 'IBM Plex Mono', monospace;
         font-size: 20px;
     }
+    /* Header - Footer - Body */
+
+    /* Pagina principal inicio */
+    .intro{
+        padding-top: 10px;
+    }
+    .intro p{
+        font-size: 20px;
+    }
+    /* Pagina principal final */
+
+    /* Reseñas inicio */
+    .opinion{
+        font-family: 'IBM Plex Mono', monospace;
+        text-align: center;
+    }
+    .opinion h3{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #enviar{
+        margin-bottom: 10px;
+    }
+    /* Reseñas final */
+
+    /* Sobre Tortuga inicio */
+    .sobre h2{
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 50px;
+    } 
+    .sobre p{
+        font-family: 'IBM Plex Mono', monospace;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 30px;
+    }
+    /* Sobre Tortuga final */
+
+    /* FAQ inicio */
+    .pregu h2{
+        font-size: 50px;
+    }
+    .pregu p, li{
+        font-size: 30px;
+    }
+    /* FAQ final */
 }
 
 @media only screen  and (min-width: 1200px){
+    /* Header - Footer - Body */
     h1{
         padding-left: 30px;
         padding-top: 25px;
@@ -181,12 +230,39 @@ video{
         text-align: center;
         margin: 2px;
     }
-    .pregu h2{
-        font-size: 50px;
+    footer{
+        padding-top: 30px;
+        text-align: center;
+        height: 90px;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 20px;
     }
-    .pregu p, li{
-        font-size: 30px;
+    /* Header - Footer - Body */
+
+    /* Pagina principal inicio  */
+    .intro{
+        padding-top: 10px;
     }
+    .intro p{
+        font-size: 20px;
+    }
+    /* Pagina principal final */
+
+    /* Reseñas inicio */
+    .opinion{
+        font-family: 'IBM Plex Mono', monospace;
+        text-align: center;
+    }
+    .opinion h3{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #enviar{
+        margin-bottom: 10px;
+    }
+    /* Reseñas final */
+
+    /* Sobre Tortuga inicio */
     .sobre h2{
         font-family: 'IBM Plex Mono', monospace;
         font-size: 50px;
@@ -197,17 +273,14 @@ video{
         padding-right: 10px;
         font-size: 30px;
     }
-    .intro{
-        padding-top: 10px;
+    /* Sobre Tortuga final */
+
+    /* FAQ inicio */
+    .pregu h2{
+        font-size: 50px;
     }
-    .intro p{
-        font-size: 20px;
+    .pregu p, li{
+        font-size: 30px;
     }
-    footer{
-        padding-top: 30px;
-        text-align: center;
-        height: 90px;
-        font-family: 'IBM Plex Mono', monospace;
-        font-size: 20px;
-    }
+    /* FAQ final */
 }
