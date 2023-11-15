@@ -6,15 +6,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Noto+Sans+Kawi&family=Noto+Sans+TC&display=swap');
 
-/*
-font-family: 'IBM Plex Mono', monospace;
-font-family: 'Noto Sans Kawi', sans-serif;
-font-family: 'Noto Sans TC', sans-serif;
-*/
+/*font-family: 'IBM Plex Mono', monospace;*/
 
 /* Header - Footer - Body */
 header{
-    height: 110px;
+    height: fit-content;
     background-color: #AD343E;
     display: flex;
     flex-wrap: nowrap;
@@ -22,7 +18,6 @@ header{
     font-family: 'IBM Plex Mono', monospace;
 }
 .logo img{
-    padding-top: 10px;
     width: 100px;
     height: 100px;
 }
@@ -40,7 +35,8 @@ h1{
     color: #E0E0CE;
     text-transform: capitalize;
     font-size: 10px;
-    padding: 5px;
+    margin-left:5px;
+    margin-right:5px;
 }
 .nav-op:hover{
     color: #F2AF29;
@@ -87,6 +83,7 @@ footer{
 video{
     border-radius: 5%;
     width: 100%;
+    margin-bottom: 10px;
 }
 /* Pagina principal final */
 
@@ -98,13 +95,14 @@ video{
 .productos-desc{
     margin-top: 10px;
     text-align: center;
-    font-family: 'IBM Plex Mono', monospace;;
+    font-family: 'IBM Plex Mono', monospace;
     color: #E0E0CE;
     background-color: #AD343E;
     text-transform: uppercase;
 }
 .carousel{
-    margin-top: 10px;
+    border: 5px solid #AD343E;
+    padding: 10px;
 }
 .carousel-item img{
     height: 200px;
@@ -145,58 +143,114 @@ video{
 /* Sobre Tortuga final */
 
 /* FAQ inicio */
+section{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-evenly;
+}
 .pregu{
+    width: 40%;
+    height: 300px;
+    border: 5px solid #AD343E;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
     font-family: 'IBM Plex Mono', monospace;
-    padding-top: 5px;
-    padding-right: 10px;
+    text-align: center;
+    background-color: #AD343E;
+}
+.pregu:hover{
+    transform: scale(1.05);
+}
+.pregu1{
+    width: 40%;
+    height: 190px;
+    border: 5px solid #AD343E;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+    background-color: #AD343E;
+}
+.pregu1:hover{
+    transform: scale(1.05);
+}
+.enc{
+    background-image: url(multimedia/Entrega.png);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.dem{
+    background-image: url(multimedia/demora.png);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .pregu h2{
-    padding-left: 5px;
-    padding-top: 10px;
+    text-align: center;
+    color: #F2AF29;
+    background-color: #474747;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 20px;
 }
-.pregu ol{
-    padding-left: 80px;
+.pregu1 h2{
+    color: #F2AF29;
+    background-color: #474747;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
 }
 .pregu a{
     color: black;
 }
 .pregu a:hover{
-    font-weight: 600;
+    color: #F2AF29;
+    text-transform: uppercase;
 }
-.pregu p, li{
-    font-size: 15px;
+.pregu li{
+    padding-right: 8px;
+    font-size: 9px;
+    font-weight: 700;
 }
-.pregu p{
-    font-family: 'IBM Plex Mono', monospace;
-    padding-left: 30px;
+.pregu1 p{
+    font-size: 9px;
+    font-weight: 700;
 }
 /* FAQ final */
-
-@media only screen  and (min-width: 1024px) and (max-width: 1200px){
+@media only screen and (min-width: 320px) and (max-width: 571px){
+    .logo img{
+        margin: 10px;
+        width: 80px;
+        height: 80px;
+    }
+    h1{
+        padding-left: 25px;
+        padding-top: 30px;
+        padding-bottom: 5px;
+    }
+}
+@media only screen  and (min-width: 1200px) and (max-width:1440px){
     /* Header - Footer - Body */
+    .logo img{
+        margin: 20px;
+    }
     h1{
         padding-left: 30px;
-        padding-top: 35px;
+        padding-top: 40px;
         padding-bottom: 30px;
         font-size: 30px;
     }
     .nav-op{
-        text-decoration: none;
-        text-transform: capitalize;
         font-size: 15px;
     }
     .nav-item{
-        border-radius: 20%;
-        text-align: center;
+
         margin: 2px;
     }
     footer{
         padding-top: 20px;
         text-align: center;
         height: 120px;
-        font-family: 'IBM Plex Mono', monospace;
         font-size: 20px;
     }
     .redes a{
@@ -222,7 +276,7 @@ video{
     .productos-desc{
         margin: 10px;
         text-align: center;
-        font-family: 'IBM Plex Mono', monospace;;
+        font-family: 'IBM Plex Mono', monospace;
         color: #E0E0CE;
         background-color: #AD343E;
         text-transform: uppercase;
@@ -262,38 +316,48 @@ video{
     /* Sobre Tortuga final */
 
     /* FAQ inicio */
-    .pregu h2{
-        font-size: 50px;
+    .pregu{
+        width: 40%;
+        height: 440px;
+        text-align: left;
+        background-color: #AD343E;
     }
-    .pregu p, li{
-        font-size: 30px;
+    .pregu1{
+        width: 40%;
+        height: 350px;
+        text-align: center;
+        background-color: #AD343E;
+    }
+    .pregu1 p{
+        font-size: 18px;
+    }
+    .pregu li{
+        font-size:18px;
     }
     /* FAQ final */
 }
-
-@media only screen  and (min-width: 1201px){
+@media only screen  and (min-width: 1440px) and (max-width:1981px){
     /* Header - Footer - Body */
+    .logo img{
+        margin: 20px;
+    }
     h1{
         padding-left: 30px;
-        padding-top: 25px;
+        padding-top: 40px;
         padding-bottom: 30px;
-        font-size: 50px;
+        font-size: 30px;
     }
     .nav-op{
-        text-decoration: none;
-        text-transform: capitalize;
         font-size: 15px;
     }
     .nav-item{
-        border-radius: 20%;
-        text-align: center;
+
         margin: 2px;
     }
     footer{
         padding-top: 20px;
         text-align: center;
         height: 120px;
-        font-family: 'IBM Plex Mono', monospace;
         font-size: 20px;
     }
     .redes a{
@@ -303,7 +367,7 @@ video{
     }
     /* Header - Footer - Body */
 
-    /* Pagina principal inicio  */
+    /* Pagina principal inicio */
     .intro{
         padding-top: 10px;
     }
@@ -314,11 +378,12 @@ video{
 
     /* Productos inicia */
     .container{
-        margin-left: 100px;
+        margin-left: 30px;
     }
     .productos-desc{
+        margin: 10px;
         text-align: center;
-        font-family: 'IBM Plex Mono', monospace;;
+        font-family: 'IBM Plex Mono', monospace;
         color: #E0E0CE;
         background-color: #AD343E;
         text-transform: uppercase;
@@ -358,11 +423,23 @@ video{
     /* Sobre Tortuga final */
 
     /* FAQ inicio */
-    .pregu h2{
-        font-size: 50px;
+    .pregu{
+        width: 40%;
+        height: 510px;
+        text-align: left;
+        background-color: #AD343E;
     }
-    .pregu p, li{
-        font-size: 30px;
+    .pregu1{
+        width: 40%;
+        height: 410px;
+        text-align: center;
+        background-color: #AD343E;
+    }
+    .pregu1 p{
+        font-size: 18px;
+    }
+    .pregu li{
+        font-size:18px;
     }
     /* FAQ final */
 }
