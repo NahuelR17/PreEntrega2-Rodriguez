@@ -176,13 +176,13 @@ section{
     transform: scale(1.05);
 }
 .enc{
-    background-image: url(/multimedia/Entrega.png);
+    background-image: url(./multimedia/Entrega.jpg);
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
 }
 .dem{
-    background-image: url(/multimedia/demora.png);
+    background-image: url(./multimedia/demora.jpg);
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
